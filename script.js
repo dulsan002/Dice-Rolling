@@ -10,7 +10,7 @@ for(let i =0; i< times;i++){
 let result = Math.floor(Math.random()*6 + 1);
 value.push(result);
 
-img.push(`<img src="Dice_img/${result}.png" alt = "Dice${result}">`);
+img.push(`<img src="${result}.png" alt = "Dice${result}">`);
 }
 dice.textContent = `Dice: ${value.join(', ')}`;
 diceimg.innerHTML = img.join('');
